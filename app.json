@@ -1,0 +1,30 @@
+{
+  "name": "kawshala-MD",
+  "description": "Javascript WhatsApp bot made by Danuka Dissanayake",
+  "logo": "https://i.pinimg.com/1200x/3f/b4/70/3fb470223d4c1006a88e4f4430f8ba67.jpg",
+  "keywords": ["DANUWA-MD"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "ALIVE_IMG": {
+      "description": "Put your alive img here.",
+      "required": true
+    },
+    
+    "ALIVE_MSG": {
+      "description": "Put your alive msg here.",
+      "required": true
+    }   
+},
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
